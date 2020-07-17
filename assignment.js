@@ -14,7 +14,7 @@ function feetToMile (feet){
         }
         
     }
-    var output = feetToMile(5280);
+    var output = feetToMile(120);
     console.log(output);
     
 
@@ -55,7 +55,7 @@ function woodCalculator(chair, table, bed){
 }
 
 
-var woodNeeded = woodCalculator( 5, 3, 8);
+var woodNeeded = woodCalculator( 6, 5, 4);
 console.log(woodNeeded);
     
     
@@ -86,7 +86,7 @@ function brickCalculator(n){
         if(floors > 20){
             var bricks = 270000 + ((n-20) * 10000);
             return bricks;
-            
+
         }
         
         
@@ -101,21 +101,21 @@ function brickCalculator(n){
 //tinyFriend starts from here:
 
 function tinyFriend (array){
-    var smallword = array[0];
+    var smallWord = array[0];
 
 for( var i = 0; i < array.length; i++){
-    var tinyname = array[i];
-    if(tinyname.length < smallword.length ){
-        smallword = tinyname;
+    var tinyName = array[i];
+    if(tinyName.length < smallWord.length ){
+        smallWord = tinyName;
     }
      
         
-        if(smallword.length == 0){
+        if(smallWord.length == 0){
             var warning = "empty array";
             return warning;
         }
 }
-    return smallword   
+    return smallWord   
 }
-var result = tinyFriend([ "saalaam", "malam", "tamaluddin", "usha", "era"]);
+var result = tinyFriend([ "saalaam", "malam", "era" ,"tamaluddin", "usha"]);
 console.log(result)
